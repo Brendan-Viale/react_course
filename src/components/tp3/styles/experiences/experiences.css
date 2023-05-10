@@ -1,0 +1,9 @@
+#experiences{
+    margin-left:50px;
+    margin-top:50px;
+    width:calc(50% - 50px);
+}
+
+#experiences div>div{
+    display:flex;
+}

@@ -1,0 +1,16 @@
+#movies li{
+    list-style:none;
+}
+
+#movies ul{
+display:flex;
+flex-wrap: wrap;
+justify-content:space-around;
+padding:0 100px;
+}
+#movies h2{
+    margin:30px 0;
+    text-align:center;
+    border-bottom: 4px solid #61dafb;
+    display:inline-block;
+}

@@ -1,0 +1,28 @@
+.App-header nav{
+    width:100%;
+}
+
+.App-header ul{
+    display:flex;
+    justify-content: space-around;
+    padding:0;
+    width:100%;
+}
+
+.App-header li{
+    list-style:none;
+}
+
+.App-header a{
+    text-decoration: none;
+    color:white;
+    transition:color .3s;
+}
+
+.App-header a:hover{
+    color:#61dafb;
+}
+
+.App-header .active{
+    color:#61dafb!important;
+}

@@ -1,0 +1,29 @@
+#projects{
+    margin-left:50px;
+}
+
+#projects div>div{
+    display:flex;
+}
+
+#projects ul{
+    display:flex;
+}
+
+#projects li{
+    width:30%;
+    list-style:none;
+    margin: 0 10px;
+}
+
+#projects img{
+    max-height:200px;
+    height:auto;
+    width:100%;
+    max-width:500px;
+    object-fit: cover;
+}
+
+.titre{
+    font-weight:bold;
+}

@@ -1,0 +1,26 @@
+#formations{
+    margin-left:50px;
+    margin-top:50px;
+    width:calc(50% - 50px);
+}
+
+#formations div>div{
+    display:flex;
+}
+
+.date{
+    font-weight:bold;
+}
+
+.lieu{
+    margin-left:50px;
+}
+
+.intitule{
+    margin:0 0 20px 0;
+    text-align: left;
+}
+
+h2{
+    text-align: left;
+}

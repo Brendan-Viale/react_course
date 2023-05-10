@@ -1,0 +1,32 @@
+  #tp3 #content{
+    width:100%;
+  }
+  
+  #tp3 #content > div{
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+    justify-content: center;
+    align-items:center;
+  }
+  
+  #tp3 h2{
+    border-bottom: 4px solid #61dafb;
+      display: table;
+  }
+  
+  #tp3{
+    display:flex;
+  }
+  
+  #tp3 aside{
+    width:20%;
+    background-color:#61dafb;
+    z-index:1;
+  }
+  
+  #tp3 aside > img{
+    height: 150px;
+    margin:30px 0;
+    z-index:1;
+  }
