@@ -1,8 +1,11 @@
-import {useState, useEffect} from 'react';
+import {useState, useEffect, useRef} from 'react';
 
 export const Timer = () => {
     //On utilise l'objet de type Date afin de récupérer la date courante
-    let today = new Date();
+    const today = useRef(new Date());
+    const refreshToday = () => {
+        today.current = new Date();
+    }
     // On récupère les heures, minutes et secondes en y ajoutant un "0" devant s'il n'y a qu'un seul chiffre (donc de 0 à 9)
     let hours = ("0" + today.getHours()).slice(-2);
     let minutes =  ':' + ("0" + today.getMinutes()).slice(-2) ;
@@ -14,7 +17,7 @@ export const Timer = () => {
     useEffect(() => {
         setTimeout(() => {
             // On récupère la date et reproduit le format voulu une nouvelle fois
-            today = new Date();
+            refreshToday();
             setTime(("0" + today.getHours()).slice(-2) + ':' + ("0" + today.getMinutes()).slice(-2) + ':' + ("0" + (today.getSeconds())).slice(-2));
         }, 1000);
         // On ne souhaite rentrer dans le useEffect que si le state currentTime est modifié
