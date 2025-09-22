@@ -8,6 +8,9 @@ import { Tp5 } from "./tp5/Tp5";
 import { Tp6 } from "./tp6/Tp6";
 import { Tp7 } from "./tp7/Tp7";
 import { Tp8 } from "./tp8/Tp8";
+import { Login } from "./tp10/Login";
+import { Logout } from "./Logout";
+import Tp16 from "./tp16/Tp16";
 
 export const Router = () => {
     return(
@@ -26,6 +29,8 @@ export const Router = () => {
                 <Route path="/tp6" element={<Tp6 />} />
                 <Route path="/tp7" element={<Tp7 />} />
                 <Route path="/tp8" element={<Tp8 />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/tp16" element={<Tp16 />} />
             </Routes>
         </>
     )

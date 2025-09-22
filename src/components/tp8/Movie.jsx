@@ -1,4 +1,4 @@
-export const Movie = ({title,vote_average,release_date,poster_path}) => {
+export const Movie = ({title,vote_average,release_date,poster_path,funct}) => {
     // poster_path ne contient qu'une partie du chemin, il faut rajouter l'url du début (cf la doc de l'api)
     const poster = "https://image.tmdb.org/t/p/w300" + poster_path;
     return(

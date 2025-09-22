@@ -1,6 +1,7 @@
 import { Project } from "./Project"
 import "../../styles/projects/projects.css"
 
+
 const projects = {
     morpion : {
         id : "1",
@@ -25,9 +26,8 @@ export const Projects = () => {
             <h2>Projets</h2>
             <ul>
                 {/* Voir Experiences.jsx */}
-                {Object.values(projects).map(
-                    (project)=>
-                    <li key={project.id}>
+                {Object.values(projects).map((project, index)=>
+                    <li key={index}>
                         <Project {...project} />
                     </li>
                 )}

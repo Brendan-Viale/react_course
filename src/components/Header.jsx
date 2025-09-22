@@ -1,7 +1,14 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import "./Header.css"
 
 export const Header = () => {
+    const navigate = useNavigate();
+    const token = sessionStorage.getItem("token");
+    const disconnect = () => {
+        sessionStorage.clear();
+        navigate("/login");
+    }
+
     return(
         <header className="App-header">
             {/* Menu de mon application, j'utilise des NavLink et non des Link car cela me permet d'accéder à la propriété isActive */}
@@ -33,6 +40,17 @@ export const Header = () => {
                     <li>
                         <NavLink to="/tp8" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>TP8</NavLink>
                     </li>
+                    <li>
+                        <NavLink to="/login" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Login</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/tp16" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>TP16</NavLink>
+                    </li>
+                    {token && 
+                        <li>
+                            <button onClick={disconnect}>Déconnexion</button>
+                        </li>
+                    }
                 </ul>
             </nav>
         </header>

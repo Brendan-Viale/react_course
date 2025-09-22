@@ -13,10 +13,10 @@ export const Tp3 = () => {
                 <Identity />
             </aside>
             <section id="content">
-            <div>
+                <div>
                     <Formations />
                     <Experiences />
-            </div>
+                </div>
                 <Projects />
             </section>
         </div>

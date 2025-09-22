@@ -6,6 +6,7 @@ import 'rsuite/dist/rsuite-no-reset.min.css';
 import "./movies.css";
 
 export const Movies = () => {
+
     // Je stocke les résultats dans des tableaux afin d'accéder à la propriété length permettant de vérifier qu'on ait récupéré les données
     // Stockera le résultat de la récupération des films populaires
     const [popularMovies,setPopularMovies] = useState([]);
